@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerRequestPinChange">
+   <children>
+      <Button layoutX="62.0" layoutY="359.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="40.0" prefWidth="275.0" text="Back" />
+      <Button layoutX="63.0" layoutY="284.0" mnemonicParsing="false" onAction="#changePinRequest" prefHeight="40.0" prefWidth="275.0" text="Change PIN" />
+      <Label fx:id="lblWarning" layoutX="131.0" layoutY="340.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="119.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Studio_Project_V1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNewPIN" layoutX="63.0" layoutY="208.0" prefHeight="32.0" prefWidth="275.0" promptText="Enter New PIN ..." />
+   </children>
+</Pane>

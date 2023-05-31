@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/history.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerHistoryController">
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="94.0" layoutX="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/historyico.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lstView" layoutX="51.0" layoutY="109.0" prefHeight="283.0" prefWidth="298.0" />
+      <Button layoutX="48.0" layoutY="415.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="47.0" prefWidth="298.0" text="Back">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+   </children>
+</Pane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmLoginController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="400.0" styleClass="pane">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="112.0" layoutX="145.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/cardBlack.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogin" layoutX="48.0" layoutY="388.0" mnemonicParsing="false" onAction="#loginRequest" prefHeight="40.0" prefWidth="303.0" text="Enter" />
+            <Button fx:id="btnNewCard" layoutX="48.0" layoutY="443.0" mnemonicParsing="false" onAction="#newCardRequest" prefHeight="40.0" prefWidth="303.0" text="Request New Card" />
+            <PasswordField fx:id="txtCardPin" layoutX="9.0" layoutY="260.0" prefHeight="35.0" prefWidth="380.0" promptText="Enter Card Pin" styleClass="password-field" />
+            <TextField fx:id="txtCardID" layoutX="9.0" layoutY="202.0" prefHeight="35.0" prefWidth="380.0" promptText="Enter Card ID" styleClass="text-field" />
+            <Label fx:id="lblWarning" layoutX="49.0" layoutY="329.0" prefHeight="17.0" prefWidth="303.0" textAlignment="CENTER" textFill="#0066ff">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblWarning1" layoutX="122.0" layoutY="14.0" prefHeight="17.0" prefWidth="303.0" text="Get Started" textAlignment="CENTER" textFill="#0066ff">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

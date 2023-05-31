@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmRequestNewCardController">
+   <children>
+      <Button fx:id="btnBack" layoutX="266.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="40.0" prefWidth="119.0" text="Back" />
+      <Label layoutX="21.0" layoutY="409.0" prefHeight="54.0" prefWidth="150.0" text="A 50$ Fee Will be charged">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <TextField fx:id="nameField" layoutX="12.0" layoutY="87.0" prefHeight="32.0" prefWidth="367.0" promptText="Enter Name" styleClass="text-field" />
+      <TextField fx:id="addressField" layoutX="13.0" layoutY="151.0" prefHeight="32.0" prefWidth="367.0" promptText="Enter Address" styleClass="text-field" />
+      <TextField fx:id="cardNumberField" layoutX="13.0" layoutY="213.0" prefHeight="32.0" prefWidth="367.0" promptText="Card Number (16 Numbers)" styleClass="text-field" />
+      <TextField fx:id="PINField" layoutX="13.0" layoutY="268.0" prefHeight="32.0" prefWidth="367.0" promptText="PIN (4 Numbers)" styleClass="text-field" />
+      <TextField fx:id="CVVField" layoutX="12.0" layoutY="333.0" prefHeight="32.0" prefWidth="367.0" promptText="CVV (3 Numbers)" styleClass="text-field" />
+      <TextField fx:id="initialDepositField" layoutX="12.0" layoutY="394.0" prefHeight="32.0" prefWidth="367.0" promptText="Initial Deposit (at least 100)" styleClass="text-field" />
+      <Label fx:id="lblWarning" layoutX="12.0" layoutY="436.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="91.0" layoutX="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/card.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSubmit" layoutX="14.0" layoutY="531.0" mnemonicParsing="false" onAction="#submitRequest" prefHeight="40.0" prefWidth="119.0" text="Submit" />
+   </children>
+</Pane>
