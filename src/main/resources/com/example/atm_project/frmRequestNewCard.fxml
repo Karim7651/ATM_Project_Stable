@@ -7,7 +7,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmRequestNewCardController">
    <children>
-      <Button fx:id="btnBack" layoutX="266.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="40.0" prefWidth="119.0" text="Back" />
+      <Button fx:id="btnBack" layoutX="237.0" layoutY="531.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="49.0" prefWidth="142.0" text="Back" />
       <Label layoutX="21.0" layoutY="409.0" prefHeight="54.0" prefWidth="150.0" text="A 50$ Fee Will be charged">
          <font>
             <Font size="11.0" />
@@ -28,6 +28,6 @@
             <Image url="@../../../Images/card.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnSubmit" layoutX="14.0" layoutY="531.0" mnemonicParsing="false" onAction="#submitRequest" prefHeight="40.0" prefWidth="119.0" text="Submit" />
+      <Button fx:id="btnSubmit" layoutX="21.0" layoutY="531.0" mnemonicParsing="false" onAction="#submitRequest" prefHeight="49.0" prefWidth="142.0" text="Submit" />
    </children>
 </Pane>

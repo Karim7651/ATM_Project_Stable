@@ -2,26 +2,44 @@ package com.example.atm_project.classes;
 
 public class Transaction {
     //if it's a cash withdrawal toCardId is set to zero
-    private int fromCardID;
+    //if it's a deposit
+    private long fromCardID;
 
-    private int toCardID;
-    private double amount;
+    private long toCardID;
+    private int amount;
 
-    public Transaction(int fromCardID, int toCardID, double amount) {
+    private String type;
+
+    public Transaction(long fromCardID, long toCardID, int amount,String type) {
         this.fromCardID = fromCardID;
         this.toCardID = toCardID;
         this.amount = amount;
+        this.type = type;
     }
 
-    public int getFromCardID() {
+    public long getFromCardID() {
         return fromCardID;
     }
 
-    public int getToCardID() {
+    public long getToCardID() {
         return toCardID;
     }
 
-    public double getAmount() {
+    public int getAmount() {
         return amount;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "from=" + fromCardID +
+                ", to=" + toCardID +
+                ", amount=" + amount +
+                ", type='" + type + '\'' +
+                '}';
     }
 }

@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmAdminPanelController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmAdminPanelController">
    <children>
-      <ImageView fitHeight="98.0" fitWidth="96.0" layoutX="152.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="98.0" fitWidth="96.0" layoutX="403.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Images/record.png" />
+            <Image url="@../../../Images/card-payment.png" />
          </image>
       </ImageView>
-      <Button layoutX="15.0" layoutY="150.0" mnemonicParsing="false" onAction="#checkRequest" prefHeight="40.0" prefWidth="370.0" text="Open Recordings in File Explorer" />
+      <ListView fx:id="listView" layoutX="82.0" layoutY="103.0" onMouseMoved="#showTransaction" prefHeight="716.0" prefWidth="739.0" />
+      <Button layoutX="337.0" layoutY="846.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="40.0" prefWidth="226.0" text="Back" />
    </children>
+   <stylesheets>
+      <URL value="@../../../css/login.css" />
+      <URL value="@../../../css/history.css" />
+   </stylesheets>
 </Pane>

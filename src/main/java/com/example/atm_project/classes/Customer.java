@@ -3,16 +3,22 @@ package com.example.atm_project.classes;
 import java.util.ArrayList;
 
 public class Customer extends Person {
-    private ArrayList<Card> cards = new ArrayList<Card>();
 
+    private static Customer customer;
+    private long currentCard;
 
-    public Customer(String name, String address) {
+    /*private Customer(String name, String address,) {
         super(name, address);
+    }*/
+    private Customer(long currentCard){
+        this.currentCard = currentCard;
     }
 
-
-    public ArrayList<Card> getCards() {
-        return cards;
+    public static Customer getInstance(long currentCard){
+        if(customer == null){
+            customer = new Customer(currentCard);
+            return customer;
+        }
+        return customer;
     }
-
 }

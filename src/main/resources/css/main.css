@@ -6,27 +6,35 @@ img:active {
   cursor: pointer;
 }
 
-/* Blue round buttons with animation on hover and click */
+
 .button {
-  display: inline-block;
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  -fx-background-color: #8e44ad;
+  -fx-text-fill: #000000;
+  -fx-padding: 10px 20px;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+  -fx-border-radius: 50px; /* Round buttons */
+  -fx-background-radius: 50px; /* Round buttons */
+  -fx-transition: all 1s;
+  -fx-border-color: #000; /* Black border color */
+  -fx-border-width: 2px;
 }
 
 .button:hover {
-  background-color: darkblue;
+  -fx-background-color: #9b59b6;
+  -fx-text-fill: #fff;
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
 }
 
-.button:active {
-  transform: scale(0.95);
+.button:pressed {
+  -fx-background-color: #8e44ad;
+  -fx-text-fill: #fff;
+  -fx-scale-x: 0.9;
+  -fx-scale-y: 0.9;
+  -fx-translate-x: 1px;
+  -fx-translate-y: 1px;
 }
 
 /* CSS property for text fields */

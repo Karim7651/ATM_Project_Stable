@@ -5,8 +5,11 @@ import com.example.atm_project.classes.Lists;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class FrmRequestNewCardController {
     public Label lblWarning;
@@ -17,7 +20,7 @@ public class FrmRequestNewCardController {
     public TextField addressField;
     public TextField nameField;
 
-    public void submitRequest(ActionEvent actionEvent) throws SQLException {
+    public void submitRequest(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
         if (initialDepositField.getText().equals("") || CVVField.getText().equals("") || PINField.getText().equals("") || cardNumberField.getText().equals("")
                 || addressField.getText().equals("") || nameField.getText().equals("")) {
             lblWarning.setText("Fill Information!");
@@ -38,7 +41,7 @@ public class FrmRequestNewCardController {
             lblWarning.setText("Only Numbers in Pin, Number, CVV, Deposit");
             return;
         }
-        if (Integer.parseInt(initialDepositField.getText()) < 50) {
+        if (Integer.parseInt(initialDepositField.getText()) < 100) {
             lblWarning.setText("Insufficient Deposit");
         } else if (Lists.getCardOwnerMap().containsKey(Long.parseLong(cardNumberField.getText()))) {
             lblWarning.setText("Card Number Already Registered");

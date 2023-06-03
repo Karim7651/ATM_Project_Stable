@@ -1,21 +1,17 @@
 package com.example.atm_project.classes;
 
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.util.Pair;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class Lists {
     public static Stage stage;
 
     public static ArrayList<Scene> scenesArrayList = new ArrayList<>();
-    private static ArrayList<Administrator> administratorsList = new ArrayList<>();
-
-    private static ArrayList<Customer> customersList = new ArrayList<>();
 
     private static HashMap<Long, String> cardOwnerMap = new HashMap<>();
 
@@ -27,21 +23,15 @@ public class Lists {
 
     private static HashMap<Long, LocalDate> cardExpiryMap = new HashMap<>();
 
+    private static ArrayList<Transaction> transactions = new ArrayList<>();
     private static ArrayList<String> loggedInCustomerData = new ArrayList<>();
     /* 0 -> name
      *  1 -> balance
-     *  2 -> PIN*/
+     *  2 -> PIN
+     * 3 -> cardNumber*/
 
     //avoid making objects
     private Lists() {
-    }
-
-    public static ArrayList<Administrator> getAdministratorsList() {
-        return administratorsList;
-    }
-
-    public static ArrayList<Customer> getCustomersList() {
-        return customersList;
     }
 
     public static HashMap<Long, String> getCardOwnerMap() {
@@ -68,9 +58,14 @@ public class Lists {
         return cardExpiryMap;
     }
 
-    public static void logCustomerIn(String name,int balance, int PIN){
+    public static ArrayList<Transaction> getTransactions() {
+        return transactions;
+    }
+
+    public static void logCustomerIn(String name, int balance, int PIN) {
         loggedInCustomerData.add(name);
         loggedInCustomerData.add(String.valueOf(balance));
         loggedInCustomerData.add(String.valueOf(PIN));
     }
+
 }

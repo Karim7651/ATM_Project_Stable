@@ -5,17 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/history.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerHistoryController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#showTransactions" prefHeight="900.0" prefWidth="900.0" stylesheets="@../../../css/history.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerHistoryController">
    <children>
-      <ImageView fitHeight="116.0" fitWidth="94.0" layoutX="156.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="116.0" fitWidth="94.0" layoutX="403.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/historyico.png" />
          </image>
       </ImageView>
-      <ListView fx:id="lstView" layoutX="51.0" layoutY="109.0" prefHeight="283.0" prefWidth="298.0" />
-      <Button layoutX="48.0" layoutY="415.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="47.0" prefWidth="298.0" text="Back">
+      <Button layoutX="301.0" layoutY="839.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="47.0" prefWidth="298.0" text="Back">
          <font>
             <Font size="30.0" />
          </font></Button>
+      <ListView fx:id="listView" layoutX="64.0" layoutY="108.0" onMouseEntered="#showTransactions" prefHeight="709.0" prefWidth="773.0" />
    </children>
 </Pane>

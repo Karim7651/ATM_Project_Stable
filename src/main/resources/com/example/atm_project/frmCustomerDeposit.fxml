@@ -5,17 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerDepositController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleEnterKeyPressed" onMouseMoved="#refreshLbl" prefHeight="500.0" prefWidth="400.0" stylesheets="@../../../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_project.FrmCustomerDepositController">
    <children>
-      <Button layoutX="153.0" layoutY="288.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="40.0" prefWidth="94.0" text="Back" />
-      <Button layoutX="12.0" layoutY="230.0" mnemonicParsing="false" onAction="#confirmDepositRequest" prefHeight="40.0" prefWidth="374.0" text="Confirm" />
+      <Button layoutX="13.0" layoutY="318.0" mnemonicParsing="false" onAction="#goBackRequest" prefHeight="49.0" prefWidth="374.0" text="Back" />
+      <Button layoutX="13.0" layoutY="240.0" mnemonicParsing="false" onAction="#confirmDepositRequest" prefHeight="40.0" prefWidth="374.0" text="Confirm" />
       <TextField fx:id="txtBoxAmount" layoutX="13.0" layoutY="171.0" prefHeight="32.0" prefWidth="374.0" promptText="Enter Amount ..." />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/deposit2.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblWarning" layoutX="99.0" layoutY="401.0">
+      <Label fx:id="lblWarning" layoutX="12.0" layoutY="408.0">
          <font>
             <Font size="27.0" />
          </font>
